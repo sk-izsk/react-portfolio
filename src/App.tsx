@@ -1,5 +1,7 @@
 import React, { useEffect } from "react"
-import { Header } from "./components"
+import { BrowserRouter } from "react-router-dom"
+import styled from "styled-components"
+import { Header, Sidebar } from "./components"
 import "./themes/themes.css"
 
 interface Props {}
@@ -17,9 +19,20 @@ const App: React.FC<Props> = () => {
   }, [])
   return (
     <>
-      <Header />
+      <BrowserRouter>
+        <Header />
+        <StyledMain>
+          <Sidebar />
+          <p>VSCode Clone</p>
+        </StyledMain>
+      </BrowserRouter>
     </>
   )
 }
 
 export default App
+
+const StyledMain = styled.div`
+  display: flex;
+  background: var(--main-bg);
+`

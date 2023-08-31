@@ -1,6 +1,6 @@
 import { IZSK } from "../base"
 
-const AccountIcon: IZSK.Icon = (props) => {
+export const AccountIcon: IZSK.Icon = (props) => {
   return (
     <svg
       width={16}
@@ -14,5 +14,3 @@ const AccountIcon: IZSK.Icon = (props) => {
     </svg>
   )
 }
-
-export default AccountIcon
