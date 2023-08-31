@@ -1,46 +1,46 @@
+import { RiPencilLine } from "react-icons/ri"
+import {
+  VscAccount,
+  VscCode,
+  VscFiles,
+  VscGithubAlt,
+  VscMail,
+  VscSettingsGear,
+} from "react-icons/vsc"
 import { Link, useLocation } from "react-router-dom"
 import styled from "styled-components"
 import { IZSK } from "../base"
-import {
-  AccountIcon,
-  CodeIcon,
-  FilesIcon,
-  GithubIcon,
-  MailIcon,
-  PencilIcon,
-  SettingsIcon,
-} from "../icons"
 import styles from "./Sidebar.module.css"
 const sidebarTopItems = [
   {
-    Icon: FilesIcon,
+    Icon: VscFiles,
     path: "/",
   },
   {
-    Icon: GithubIcon,
+    Icon: VscGithubAlt,
     path: "/github",
   },
   {
-    Icon: CodeIcon,
+    Icon: VscCode,
     path: "/projects",
   },
   {
-    Icon: PencilIcon,
+    Icon: RiPencilLine,
     path: "/articles",
   },
   {
-    Icon: MailIcon,
+    Icon: VscMail,
     path: "/contact",
   },
 ]
 
 const sidebarBottomItems = [
   {
-    Icon: AccountIcon,
+    Icon: VscAccount,
     path: "/about",
   },
   {
-    Icon: SettingsIcon,
+    Icon: VscSettingsGear,
     path: "/settings",
   },
 ]

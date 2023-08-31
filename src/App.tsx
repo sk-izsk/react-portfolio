@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { BrowserRouter } from "react-router-dom"
 import styled from "styled-components"
-import { Header, Sidebar } from "./components"
+import { Explorer, Header, Sidebar } from "./components"
 import "./themes/themes.css"
 
 interface Props {}
@@ -23,6 +23,7 @@ const App: React.FC<Props> = () => {
         <Header />
         <StyledMain>
           <Sidebar />
+          <Explorer />
           <p>VSCode Clone</p>
         </StyledMain>
       </BrowserRouter>
