@@ -9,6 +9,7 @@ import {
   Contact,
   Home,
   Projects,
+  Settings,
   TabsBar,
 } from "./lazyComponents"
 import "./themes/themes.css"
@@ -23,8 +24,6 @@ const App: React.FC<Props> = () => {
         localStorage.getItem("theme") as string
       )
     }
-    // document.documentElement.setAttribute("data-theme", "github-dark")
-    // localStorage.setItem("theme", "github-dark")
   }, [])
   return (
     <>
@@ -55,6 +54,8 @@ const App: React.FC<Props> = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/settings" element={<Settings />} />
+                <Route path="*" element={<Home />} />
               </Routes>
             </div>
           </StyledMain>
