@@ -1,4 +1,10 @@
 import { useState } from "react"
+import { AiOutlineHtml5 } from "react-icons/ai"
+import { BiLogoCss3 } from "react-icons/bi"
+import { CgReadme } from "react-icons/cg"
+import { DiReact } from "react-icons/di"
+import { TbBrandTypescript } from "react-icons/tb"
+import { VscJson } from "react-icons/vsc"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { ChevronRight } from "../icons"
@@ -6,34 +12,34 @@ import styles from "./Explorer.module.css"
 
 const explorerItems = [
   {
-    name: "home.jsx",
+    name: "home.tsx",
     path: "/",
-    icon: "react_icon.svg",
+    icon: <DiReact size={20} />,
   },
   {
     name: "about.html",
     path: "/about",
-    icon: "html_icon.svg",
+    icon: <AiOutlineHtml5 size={20} />,
   },
   {
     name: "contact.css",
     path: "/contact",
-    icon: "css_icon.svg",
+    icon: <BiLogoCss3 size={20} />,
   },
   {
-    name: "projects.js",
+    name: "projects.ts",
     path: "/projects",
-    icon: "js_icon.svg",
+    icon: <TbBrandTypescript size={20} />,
   },
   {
     name: "articles.json",
     path: "/articles",
-    icon: "json_icon.svg",
+    icon: <VscJson size={20} />,
   },
   {
     name: "github.md",
     path: "/github",
-    icon: "markdown_icon.svg",
+    icon: <CgReadme size={20} />,
   },
 ]
 
@@ -65,13 +71,8 @@ export const Explorer = () => {
           {explorerItems.map((item) => (
             <StyledLink to={item.path} key={item.name}>
               <div className={styles.file}>
-                {/* <Image
-                  src={`/${item.icon}`}
-                  alt={item.name}
-                  height={18}
-                  width={18}
-                />{" "} */}
-                <p>{item.name}</p>
+                {item.icon}
+                <span>{item.name}</span>
               </div>
             </StyledLink>
           ))}
@@ -84,4 +85,10 @@ export const Explorer = () => {
 const StyledLink = styled(Link)`
   color: var(--text-color);
   text-decoration: none;
+  /* height: 30px;
+  width: 100%; */
+
+  span {
+    padding-left: 6px;
+  }
 `
