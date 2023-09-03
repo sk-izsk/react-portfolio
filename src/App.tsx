@@ -3,7 +3,14 @@ import { MutatingDots } from "react-loader-spinner"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import styled from "styled-components"
 import { Explorer, Header, Sidebar } from "./components"
-import { About, Contact, Home, Projects, TabsBar } from "./lazyComponents"
+import {
+  About,
+  BottomBar,
+  Contact,
+  Home,
+  Projects,
+  TabsBar,
+} from "./lazyComponents"
 import "./themes/themes.css"
 
 interface Props {}
@@ -51,6 +58,7 @@ const App: React.FC<Props> = () => {
               </Routes>
             </div>
           </StyledMain>
+          <BottomBar />
         </BrowserRouter>
       </Suspense>
     </>
