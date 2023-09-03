@@ -1,5 +1,6 @@
 export * from "./Explorer"
 export * from "./Header"
+export * from "./ProjectCard"
 export * from "./Sidebar"
 export * from "./base"
 export * from "./icons"
