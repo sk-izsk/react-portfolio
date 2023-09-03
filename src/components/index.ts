@@ -1,3 +1,4 @@
+export * from "./AboutSection"
 export * from "./Explorer"
 export * from "./Header"
 export * from "./ProjectCard"
