@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
+import styled from "styled-components"
 import { IZSK } from "../../components"
 import styles from "./TabsBar.module.css"
 
@@ -19,8 +20,12 @@ export const Tab: IZSK.FC<Props> = ({ icon, filename, path }) => {
         }`}
       >
         {icon}
-        <p>{filename}</p>
+        <StyledSpan>{filename}</StyledSpan>
       </div>
     </Link>
   )
 }
+
+const StyledSpan = styled.span`
+  /* padding: 0.5rem; */
+`

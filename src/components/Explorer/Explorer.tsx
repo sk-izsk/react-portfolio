@@ -1,12 +1,11 @@
 import { useState } from "react"
-import { AiOutlineHtml5 } from "react-icons/ai"
 import { BiLogoCss3 } from "react-icons/bi"
 import { CgReadme } from "react-icons/cg"
 import { DiReact } from "react-icons/di"
 import { TbBrandTypescript } from "react-icons/tb"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { ChevronRight } from "../icons"
+import { ChevronRight, Html5 } from "../icons"
 import styles from "./Explorer.module.css"
 
 export const explorerItems = [
@@ -18,7 +17,7 @@ export const explorerItems = [
   {
     name: "about.html",
     path: "/about",
-    icon: <AiOutlineHtml5 size={20} />,
+    icon: <Html5 />,
   },
   {
     name: "contact.css",

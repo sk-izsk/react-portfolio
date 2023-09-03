@@ -57,7 +57,9 @@ export const contactItems = [
 export const ContactList = () => {
   return (
     <div className={styles.code}>
-      <span className={styles.className}>.socials </span> &#123;
+      <span className={styles.className}>.socials </span>
+      {"  "}
+      <StyledSpan>&#123;</StyledSpan>
       {contactItems.slice(0, 8).map((item, index) => (
         <StyledLine className={styles.line} key={index}>
           &nbsp;&nbsp;&nbsp;{item.social}:{" "}
@@ -82,5 +84,8 @@ export const ContactList = () => {
 }
 
 const StyledLine = styled.div`
+  color: var(--text-color);
+`
+const StyledSpan = styled.span`
   color: var(--text-color);
 `
