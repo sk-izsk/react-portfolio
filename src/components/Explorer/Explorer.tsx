@@ -10,7 +10,7 @@ import styled from "styled-components"
 import { ChevronRight } from "../icons"
 import styles from "./Explorer.module.css"
 
-const explorerItems = [
+export const explorerItems = [
   {
     name: "home.tsx",
     path: "/",
