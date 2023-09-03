@@ -4,7 +4,6 @@ import { BiLogoCss3 } from "react-icons/bi"
 import { CgReadme } from "react-icons/cg"
 import { DiReact } from "react-icons/di"
 import { TbBrandTypescript } from "react-icons/tb"
-import { VscJson } from "react-icons/vsc"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { ChevronRight } from "../icons"
@@ -30,11 +29,6 @@ export const explorerItems = [
     name: "projects.ts",
     path: "/projects",
     icon: <TbBrandTypescript size={20} />,
-  },
-  {
-    name: "articles.json",
-    path: "/articles",
-    icon: <VscJson size={20} />,
   },
   {
     name: "github.md",

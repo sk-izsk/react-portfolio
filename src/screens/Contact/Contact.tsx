@@ -35,7 +35,7 @@ const ContactPage = () => {
         </StyledHeading>
         <ContactList />
       </StyledDiv>
-      <div>
+      <StyledForm>
         <h3 className={styles.heading}>Or Fill Out This Form</h3>
         <form className={styles.form} onSubmit={submitForm}>
           <div className={styles.flex}>
@@ -50,7 +50,7 @@ const ContactPage = () => {
                 required
               />
             </div>
-            <div>
+            <StyledEmail>
               <label htmlFor="email">Email</label>
               <input
                 type="email"
@@ -60,7 +60,7 @@ const ContactPage = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-            </div>
+            </StyledEmail>
           </div>
           <div>
             <label htmlFor="name">Subject</label>
@@ -86,7 +86,7 @@ const ContactPage = () => {
           </div>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </StyledForm>
     </div>
   )
 }
@@ -96,6 +96,14 @@ const StyledHeading = styled.h3`
 `
 
 const StyledDiv = styled.div`
+  padding-left: 1.5rem;
+`
+
+const StyledForm = styled.div`
+  padding-right: 3rem;
+`
+
+const StyledEmail = styled.div`
   padding-left: 1.5rem;
 `
 

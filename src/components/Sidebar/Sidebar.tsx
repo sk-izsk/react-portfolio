@@ -1,4 +1,3 @@
-import { RiPencilLine } from "react-icons/ri"
 import {
   VscAccount,
   VscCode,
@@ -23,10 +22,6 @@ const sidebarTopItems = [
   {
     Icon: VscCode,
     path: "/projects",
-  },
-  {
-    Icon: RiPencilLine,
-    path: "/articles",
   },
   {
     Icon: VscMail,
