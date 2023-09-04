@@ -1,39 +1,41 @@
 import { useState } from "react"
-import { AiOutlineHtml5 } from "react-icons/ai"
-import { BiLogoCss3 } from "react-icons/bi"
-import { CgReadme } from "react-icons/cg"
-import { DiReact } from "react-icons/di"
-import { TbBrandTypescript } from "react-icons/tb"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { ChevronRight } from "../icons"
+import {
+  ChevronRight,
+  Css,
+  Html5,
+  Markdown,
+  ReactJS,
+  Typescript,
+} from "../icons"
 import styles from "./Explorer.module.css"
 
 export const explorerItems = [
   {
     name: "home.tsx",
     path: "/",
-    icon: <DiReact size={20} />,
+    icon: <ReactJS height={18} width={18} />,
   },
   {
     name: "about.html",
     path: "/about",
-    icon: <AiOutlineHtml5 size={20} />,
+    icon: <Html5 height={18} width={18} />,
   },
   {
     name: "contact.css",
     path: "/contact",
-    icon: <BiLogoCss3 size={20} />,
+    icon: <Css height={18} width={18} />,
   },
   {
     name: "projects.ts",
     path: "/projects",
-    icon: <TbBrandTypescript size={20} />,
+    icon: <Typescript height={18} width={18} />,
   },
   {
     name: "github.md",
     path: "/github",
-    icon: <CgReadme size={20} />,
+    icon: <Markdown height={18} width={18} />,
   },
 ]
 
