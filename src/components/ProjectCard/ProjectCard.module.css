@@ -65,7 +65,8 @@
 .react,
 .react-native,
 .react-i-18-n,
-.react-bootstrap {
+.react-bootstrap,
+.react-flipkit {
   border: 0.1rem solid #61dafb;
 }
 .node,
@@ -123,6 +124,12 @@
 }
 .firebase {
   border: 2px solid #ebebeb;
+}
+.react-spring {
+  border: 2px solid #ff6d6d;
+}
+.react-router-dom {
+  border: 2px solid #f44250;
 }
 .react-jss {
   border: 2px solid #f0d81d;
