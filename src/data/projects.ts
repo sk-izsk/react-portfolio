@@ -81,7 +81,7 @@ export const projects: Project[] = [
       "I create a portfolio by using Vue, Vuex state management, Javascript, Yup for validation, axios for api call. I use CSS for styling for most of the part. Also use Vue-bootstrap for some animation and little styling.",
     tags: ["Vue", "Vuex", "Javascript", "Yup", "Axios", "CSS", "Vue-bootstrap"],
     demo: "https://youtu.be/8jqJEeZBgX8",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
   {
     id: 8,
