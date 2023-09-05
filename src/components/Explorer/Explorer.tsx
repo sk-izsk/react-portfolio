@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
+import { useMobileView } from "../../hooks"
 import { ChevronRight, Css, Html5, ReactJS, Typescript } from "../icons"
 import styles from "./Explorer.module.css"
 
@@ -33,10 +34,14 @@ export const explorerItems = [
 ]
 
 export const Explorer = () => {
+  const { isMobileView, isPortrait } = useMobileView()
   const [portfolioOpen, setPortfolioOpen] = useState(true)
 
   return (
-    <div className={styles.explorer}>
+    <StyledDiv
+      $isResponsive={isPortrait && !isMobileView}
+      className={styles.explorer}
+    >
       <p className={styles.title}>Explorer</p>
       <div>
         <input
@@ -67,9 +72,13 @@ export const Explorer = () => {
           ))}
         </div>
       </div>
-    </div>
+    </StyledDiv>
   )
 }
+
+const StyledDiv = styled.div<{ $isResponsive: boolean }>`
+  margin-left: ${({ $isResponsive }) => ($isResponsive ? "28px" : "default")};
+`
 
 const StyledLink = styled(Link)`
   color: var(--text-color);
