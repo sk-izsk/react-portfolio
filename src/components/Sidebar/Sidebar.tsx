@@ -46,8 +46,8 @@ export const Sidebar: IZSK.FC<Props> = () => {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebarTop}>
-        {sidebarTopItems.map(({ Icon, path }) => (
-          <Link to={path} key={path}>
+        {sidebarTopItems.map(({ Icon, path }, index) => (
+          <Link to={path} key={index}>
             <div
               className={`${styles.iconContainer} ${
                 location.pathname === path && styles.active
