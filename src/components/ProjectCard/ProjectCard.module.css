@@ -1,0 +1,142 @@
+.card {
+  background: var(--article-bg);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 0.1rem solid var(--accent-color);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.content p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 1rem;
+}
+
+.tags span {
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  transition: all 0.2s;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.underline {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(
+    120deg,
+    var(--accent-color) 100%,
+    var(--accent-color) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline:hover {
+  background-size: 100% 88%;
+}
+.react,
+.react-native,
+.react-i-18-n,
+.react-bootstrap {
+  border: 0.1rem solid #61dafb;
+}
+.node,
+.node-js {
+  border: 0.1rem solid #83cd29;
+}
+.cors {
+  border: 0.1rem solid #5cea85;
+}
+.mongo-db {
+  border: 0.1rem solid #439934;
+}
+.redux,
+.redux-toolkit {
+  border: 0.1rem solid #764abc;
+}
+.material-ui {
+  border: 0.1rem solid #1976d2;
+}
+.tailwind,
+.tailwind-css {
+  border: 2px solid #06b6d4;
+}
+.react-query {
+  border: 2px solid #ff4154;
+}
+.next {
+  border: 2px solid #0070f3;
+}
+.typescript {
+  border: 2px solid #2d78c7;
+}
+.antd {
+  border: 2px solid #4ba3e0;
+}
+.vue,
+.vuex,
+.vue-bootstrap {
+  border: 2px solid #4bb483;
+}
+.axios {
+  border: 2px solid #854195;
+}
+.yup {
+  border: 2px solid #ffe101;
+}
+.express {
+  border: 2px solid #828282;
+}
+.jest {
+  border: 2px solid #96737d;
+}
+.expo {
+  border: 2px solid #ebebeb;
+}
+.firebase {
+  border: 2px solid #ebebeb;
+}
+.react-jss {
+  border: 2px solid #f0d81d;
+}
+.javascript {
+  border: 2px solid #5cea85;
+}
+.css {
+  border: 2px solid #2b9df8;
+}
+.netlify {
+  border: 2px solid #3bb6bb;
+}
+.jwt,
+.jwt-authentication {
+  border: 2px solid #5cea85;
+}

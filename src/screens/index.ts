@@ -1,0 +1,7 @@
+export * from "./About"
+export * from "./BottomBar"
+export * from "./Contact"
+export * from "./Home"
+export * from "./Projects"
+export * from "./Settings"
+export * from "./TabsBar"
