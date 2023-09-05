@@ -4,53 +4,38 @@ import styles from "./ContactList.module.css"
 export const contactItems = [
   {
     social: "website",
-    link: "nitinranganath.me",
-    href: "https://nitinranganath.me",
+    link: "izsk.netlify.app",
+    href: "https://izsk.netlify.app",
   },
   {
     social: "email",
-    link: "nitinranganath@gmail.com",
-    href: "mailto:nitinranganath@gmail.com",
+    link: "sk.zeeshan1992@gmail.com",
+    href: "mailto:sk.zeeshan1992@gmail.com",
   },
   {
     social: "github",
-    link: "itsnitinr",
-    href: "https://github.com/itsnitinr",
+    link: "sk-izsk",
+    href: "https://github.com/sk-izsk",
   },
   {
     social: "linkedin",
-    link: "nitinranganath",
-    href: "https://www.linkedin.com/in/nitinranganath/",
+    link: "skizsk",
+    href: "https://www.linkedin.com/in/skizsk/",
   },
   {
     social: "twitter",
-    link: "iamnitinr",
-    href: "https://www.twitter.com/iamnitinr",
+    link: "@Sk_iZsk",
+    href: "https://www.twitter.com/sk_izsk",
   },
   {
     social: "instagram",
-    link: "iamnitinr",
-    href: "https://www.instagram.com/iamnitinr",
-  },
-  {
-    social: "polywork",
-    link: "nitinranganath",
-    href: "https://www.polywork.com/nitinranganath",
+    link: "sk_izsk",
+    href: "https://www.instagram.com/sk_izsk/",
   },
   {
     social: "telegram",
-    link: "iamnitinr",
-    href: "https://t.me/iamnitinr",
-  },
-  {
-    social: "codepen",
-    link: "nitinranganath",
-    href: "https://codepen.io/itsnitinr",
-  },
-  {
-    social: "codesandbox",
-    link: "itsnitinr",
-    href: "https://codesandbox.io/u/itsnitinr",
+    link: "sk_izsk",
+    href: "https://t.me/sk_izsk",
   },
 ]
 
@@ -58,7 +43,6 @@ export const ContactList = () => {
   return (
     <div className={styles.code}>
       <span className={styles.className}>.socials </span>
-      {"  "}
       <StyledSpan>&#123;</StyledSpan>
       {contactItems.slice(0, 8).map((item, index) => (
         <StyledLine className={styles.line} key={index}>
@@ -88,4 +72,5 @@ const StyledLine = styled.div`
 `
 const StyledSpan = styled.span`
   color: var(--text-color);
+  margin-left: 0.5rem;
 `

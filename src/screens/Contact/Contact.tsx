@@ -14,7 +14,6 @@ const Contact = () => {
 
   const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(process.env.NEXT_PUBLIC_API_URL)
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
       method: "POST",
       body: JSON.stringify({ name, email, subject, message }),
