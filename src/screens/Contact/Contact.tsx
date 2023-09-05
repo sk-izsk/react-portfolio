@@ -1,13 +1,16 @@
+import { useTitle } from "ahooks"
 import { useState } from "react"
 import styled from "styled-components"
 import styles from "./Contact.module.css"
 import { ContactList } from "./ContactList"
 
-const ContactPage = () => {
+const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
   const [message, setMessage] = useState("")
+
+  useTitle("Contact")
 
   const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -107,4 +110,4 @@ const StyledEmail = styled.div`
   padding-left: 1.5rem;
 `
 
-export default ContactPage
+export default Contact

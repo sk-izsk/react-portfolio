@@ -4,6 +4,8 @@
   flex-direction: column;
   border-radius: 20px;
   cursor: pointer;
+  border: 0.1rem solid var(--accent-color);
+  overflow: hidden;
 }
 
 .card:hover {
@@ -59,4 +61,82 @@
 
 .underline:hover {
   background-size: 100% 88%;
+}
+.react,
+.react-native,
+.react-i-18-n,
+.react-bootstrap {
+  border: 0.1rem solid #61dafb;
+}
+.node,
+.node-js {
+  border: 0.1rem solid #83cd29;
+}
+.cors {
+  border: 0.1rem solid #5cea85;
+}
+.mongo-db {
+  border: 0.1rem solid #439934;
+}
+.redux,
+.redux-toolkit {
+  border: 0.1rem solid #764abc;
+}
+.material-ui {
+  border: 0.1rem solid #1976d2;
+}
+.tailwind,
+.tailwind-css {
+  border: 2px solid #06b6d4;
+}
+.react-query {
+  border: 2px solid #ff4154;
+}
+.next {
+  border: 2px solid #0070f3;
+}
+.typescript {
+  border: 2px solid #2d78c7;
+}
+.antd {
+  border: 2px solid #4ba3e0;
+}
+.vue,
+.vuex,
+.vue-bootstrap {
+  border: 2px solid #4bb483;
+}
+.axios {
+  border: 2px solid #854195;
+}
+.yup {
+  border: 2px solid #ffe101;
+}
+.express {
+  border: 2px solid #828282;
+}
+.jest {
+  border: 2px solid #96737d;
+}
+.expo {
+  border: 2px solid #ebebeb;
+}
+.firebase {
+  border: 2px solid #ebebeb;
+}
+.react-jss {
+  border: 2px solid #f0d81d;
+}
+.javascript {
+  border: 2px solid #5cea85;
+}
+.css {
+  border: 2px solid #2b9df8;
+}
+.netlify {
+  border: 2px solid #3bb6bb;
+}
+.jwt,
+.jwt-authentication {
+  border: 2px solid #5cea85;
 }

@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "I was working in a team of 4 people as a full stack developer. Where mainly focused on React, Material ui in the frontend and Express, Node, MongoDB, Cloudinary Image uploader and JWT authentication in Backend. My main object was to enhance my backend skill to a professional level.",
     tags: [
       "React",
-      "Material UI",
+      "Material-ui",
       "Express",
       "Node",
       "MongoDB",
@@ -72,7 +72,7 @@ export const projects: Project[] = [
       "I create a portfolio by using React, React Hooks, Typescript, Yup for validation, React-MapGl, Axios and React-Query for api call. Jest for testing and some animation tools. I use JSS with fully controlled style. Also use React-bootstrap for some animation and elements.",
     tags: ["React", "Typescript", "Yup", "Axios", "Jest", "React-bootstrap"],
     demo: "https://izsk.netlify.app",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
   {
     id: 7,
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     description:
       "For Back end I use NodeJS, with express, typescript, cors, yup for validation, nodemailer with mailgun. For Database I use MongoDb.",
     tags: ["NodeJS", "Express", "Typescript", "Cors", "Yup", "MongoDb"],
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
     demo: "",
   },
   {
@@ -99,7 +99,7 @@ export const projects: Project[] = [
       "I create this facebook clone by using React, React Hooks, Typescript, React Context for state management. Jest for testing. I use Material UI for the styling but use custom JSS for it. For Backend I use firebase and its google authentication functionality",
     tags: ["React", "Typescript", "Jest", "Material UI", "Firebase"],
     demo: "https://izsk-fb.netlify.app",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
   {
     id: 10,
@@ -115,7 +115,7 @@ export const projects: Project[] = [
       "Netlify",
     ],
     demo: "https://izsk-hulu-clone.netlify.app",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
   {
     id: 11,
@@ -124,7 +124,7 @@ export const projects: Project[] = [
       "I create this twitter clone by using Vue and Tailwind CSS, it is a fully responsive website.",
     tags: ["Vue", "Tailwind CSS"],
     demo: "https://izsk-twitter-vue-clone.web.app",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
   {
     id: 12,
@@ -133,7 +133,7 @@ export const projects: Project[] = [
       "I create this facebook clone by using React, React Hooks, Typescript. Jest for testing. I use Material UI for the styling but use custom JSS for it. To deploy I am using firebase hosting service.",
     tags: ["React", "Typescript", "Jest", "Material UI", "Firebase"],
     demo: "https://airbnb-clone-496ef.web.app",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
   {
     id: 13,
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     description: "Frontend build with React, Typescript",
     tags: ["React", "Typescript"],
     demo: "https://youtu.be/OsrPFr8Nxnw",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
   {
     id: 14,
@@ -158,7 +158,7 @@ export const projects: Project[] = [
       "React spring",
     ],
     demo: "https://youtu.be/BVYRaqlpKCw",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
   {
     id: 15,
@@ -168,6 +168,6 @@ export const projects: Project[] = [
     tags: ["NodeJS", "Express", "Typescript", "Cors", "Yup", "MongoDb"],
     source_code: "https://github.com/sk-izsk/izsk-quiz-be",
     demo: "",
-    image: "path-to-image.jpg", // Add your image path here
+    image: "", // Add your image path here
   },
 ]

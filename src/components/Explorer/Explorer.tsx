@@ -1,14 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import {
-  ChevronRight,
-  Css,
-  Html5,
-  Markdown,
-  ReactJS,
-  Typescript,
-} from "../icons"
+import { ChevronRight, Css, Html5, ReactJS, Typescript } from "../icons"
 import styles from "./Explorer.module.css"
 
 export const explorerItems = [
@@ -32,11 +25,11 @@ export const explorerItems = [
     path: "/projects",
     icon: <Typescript height={18} width={18} />,
   },
-  {
-    name: "github.md",
-    path: "/github",
-    icon: <Markdown height={18} width={18} />,
-  },
+  // {
+  //   name: "github.md",
+  //   path: "/github",
+  //   icon: <Markdown height={18} width={18} />,
+  // },
 ]
 
 export const Explorer = () => {

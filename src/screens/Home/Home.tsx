@@ -1,8 +1,12 @@
+import { useTitle } from "ahooks"
 import { Link } from "react-router-dom"
+import { styled } from "styled-components"
 import { Illustration } from "../../components"
 import styles from "./Home.module.css"
 
 const Home = () => {
+  useTitle("Home")
+
   return (
     <>
       <div className={styles.container}>
@@ -20,6 +24,17 @@ const Home = () => {
             <Link to="/contact">
               <button className={styles.outlined}>Contact Me</button>
             </Link>
+            <StyledButton
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1Z4Z6Z6Z3Z6Z6Z6Z6Z6Z6Z6Z6Z6Z6Z6Z6/view?usp=sharing",
+                  "_blank"
+                )
+              }
+              className={styles.outlined}
+            >
+              Download Resume
+            </StyledButton>
           </div>
           <Illustration className={styles.illustration} />
         </div>
@@ -27,5 +42,9 @@ const Home = () => {
     </>
   )
 }
+
+const StyledButton = styled.button`
+  margin-left: 24px;
+`
 
 export default Home

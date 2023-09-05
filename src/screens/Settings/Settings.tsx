@@ -1,3 +1,4 @@
+import { useTitle } from "ahooks"
 import styled from "styled-components"
 import Ayu from "../../assets/ayu.png"
 import Dracula from "../../assets/dracula.png"
@@ -8,6 +9,7 @@ import { ThemeInfo } from "../../components"
 import styles from "./Settings.module.css"
 
 const SettingsPage = () => {
+  useTitle("Settings")
   return (
     <StyledDiv>
       <h2>Manage Themes</h2>
