@@ -27,7 +27,7 @@ const Home = () => {
             <StyledButton
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1Z4Z6Z6Z3Z6Z6Z6Z6Z6Z6Z6Z6Z6Z6Z6Z6/view?usp=sharing",
+                  "https://docs.google.com/document/d/16Ko4S8n50fedwi4re2K-djKxe2zGrRRWKuXdtko7jow/edit?usp=sharing",
                   "_blank"
                 )
               }

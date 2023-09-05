@@ -1,8 +1,10 @@
 import styled from "styled-components"
 import VSCodeIcon from "../assets/vscode_icon.svg"
+import { useMobileView } from "../hooks"
 import { IZSK } from "./base"
 
 export const Header: IZSK.FC = () => {
+  const { isLandScape } = useMobileView()
   return (
     <StyledTitlebar>
       <img src={VSCodeIcon} alt="VSCode Icon" height={15} width={15} />
@@ -15,7 +17,9 @@ export const Header: IZSK.FC = () => {
         <p>Terminal</p>
         <p>Help</p>
       </StyledItems>
-      <StyledTitle>Shaikh Zeeshan Murshed - Visual Studio Code</StyledTitle>
+      {isLandScape ? (
+        <StyledTitle>Shaikh Zeeshan Murshed - Visual Studio Code</StyledTitle>
+      ) : null}
       <StyledWindowsButtons>
         <StyledMinimize />
         <StyledMaximize />

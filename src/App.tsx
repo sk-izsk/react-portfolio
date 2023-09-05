@@ -3,6 +3,7 @@ import { MutatingDots } from "react-loader-spinner"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import styled from "styled-components"
 import { Explorer, Header, Sidebar } from "./components"
+import { useMobileView } from "./hooks"
 import {
   About,
   BottomBar,
@@ -17,6 +18,7 @@ import "./themes/themes.css"
 interface Props {}
 
 const App: React.FC<Props> = () => {
+  const { isMobileView } = useMobileView()
   useEffect(() => {
     if (localStorage.getItem("theme")) {
       document.documentElement.setAttribute(
@@ -47,7 +49,7 @@ const App: React.FC<Props> = () => {
           <StyledMain>
             <Sidebar />
             <Explorer />
-            <div style={{ width: "100%" }}>
+            <StyledDiv $isMobileView={isMobileView}>
               <TabsBar />
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -57,7 +59,7 @@ const App: React.FC<Props> = () => {
                 <Route path="/settings" element={<Settings />} />
                 <Route path="*" element={<Home />} />
               </Routes>
-            </div>
+            </StyledDiv>
           </StyledMain>
           <BottomBar />
         </BrowserRouter>
@@ -65,6 +67,11 @@ const App: React.FC<Props> = () => {
     </>
   )
 }
+
+const StyledDiv = styled.div<{ $isMobileView: boolean }>`
+  width: 100%;
+  margin-left: ${({ $isMobileView }) => ($isMobileView ? "14px" : "default")};
+`
 
 export default App
 
